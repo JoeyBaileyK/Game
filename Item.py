@@ -25,4 +25,19 @@ class Weapon(Item):
                                                              self.description,
                                                              self.value,
                                                              self.damage)
-class Rock(Weapon)    
+class Rock(Weapon):
+    def __init__(self):
+        super().__init__(name="Rock",
+                         description="A regular old rock.",
+                         value=0,
+                         damage=5)
+
+class Dagger(Weapon):
+    def __init__(self):
+        super().__init__(name="Dagger",
+                         description="A small dagger. probably best kept concealed for protection."
+                         value=10,
+                         damage=10)
+
+
+            
